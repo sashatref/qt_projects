@@ -1,5 +1,4 @@
-#ifndef SINGLEAPPLICATION_H
-#define SINGLEAPPLICATION_H
+#pragma once
 
 #include <QApplication>
 #include <QLocalServer>
@@ -25,5 +24,3 @@ private:
 
     void sendAppWake();
 };
-
-#endif // SINGLEAPPLICATION_H

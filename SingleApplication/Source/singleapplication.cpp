@@ -1,11 +1,11 @@
 #include "singleapplication.h"
 #include <QLocalSocket>
 
-SingleApplication::SingleApplication(int argc, char **argv, QString _uniqueName) : QApplication(argc, argv)
+SingleApplication::SingleApplication(int argc, char **argv, QString _uniqueName) :
+    QApplication(argc, argv),
+    m_server(0),
+    m_uniqueName(_uniqueName)
 {
-    m_server = 0;
-    m_uniqueName = _uniqueName;
-
     m_mutex = CreateMutex(NULL, FALSE, (QString("Global\\") + _uniqueName + "_QtSingleApplicationMutex").toStdWString().c_str());
     if(GetLastError() == ERROR_ALREADY_EXISTS)
     {
