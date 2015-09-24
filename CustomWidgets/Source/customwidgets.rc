@@ -1,0 +1,26 @@
+#include "buildNumber.h"
+
+
+1 VERSIONINFO
+FILEVERSION MAJOR_VERSION,MINOR_VERSION,MAINTENANCE,BUILD
+FILEFLAGSMASK 0x17L
+FILEOS 0x4L
+FILETYPE 0x2L
+FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904b0"
+		BEGIN
+			VALUE "FileDescription", ""
+			VALUE "LegalCopyright", "Avia"
+			VALUE "OriginalFilename", "CustomWidgets_vc10.dll"
+			VALUE "ProductName", "CustomWidgets"
+			VALUE "ProductVersion", PRODUCT_VER
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x419, 1252
+	END
+END

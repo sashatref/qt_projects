@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/CustomWidgets">
+        <file>Images/_remove.png</file>
+        <file>Images/_save.png</file>
+        <file>Images/Apply.png</file>
+        <file>Images/Cancel.png</file>
+        <file>Images/refresh.png</file>
+        <file>Images/remove.png</file>
+        <file>Images/add.png</file>
+        <file>Images/Open.png</file>
+        <file>Images/clear.png</file>
+        <file>Images/arrow_down.png</file>
+        <file>Images/edit.png</file>
+    </qresource>
+</RCC>
